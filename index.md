@@ -187,17 +187,17 @@ _{\neq f(\dot q)}
 
                   $$\begin{align*}
 \sum_{i=1}^N m_i \ddot{\bm r}_i \cdot \delta \bm r_i
-&= {{c1::\sum_{i=1}^N \sum_{j=1}^S m_i \ddot{\bm r}_i \cdot
-\frac{\partial \bm r_i}{\partial q_j} \, \delta q_j}} \\
+&= \sum_{i=1}^N \sum_{j=1}^S m_i \ddot{\bm r}_i \cdot
+\frac{\partial \bm r_i}{\partial q_j} \, \delta q_j \\
 
-&= {{c1::  \sum_{i=1}^N \sum_{j=1}^S m_i \left\{ \frac{d}{d t} \left( \dot{\bm r}_i  \cdot
+&=   \sum_{i=1}^N \sum_{j=1}^S m_i \left\{ \frac{d}{d t} \left( \dot{\bm r}_i  \cdot
 \frac{\partial \bm r_i}{\partial q_j}  \right)  -  \dot{\bm r}_i \frac{d}{d t} \frac{\partial \bm r_i}{\partial q_j} \right\} \, \delta q_j
-}} \\
+ \\
 
-&=  {{c1::\sum_{i=1}^N \sum_{j=1}^S m_i \left\{ \frac{d}{d t} \left( \dot{\bm r}_i  \cdot
-\frac{\partial \dot{\bm r}_i}{\partial \dot q_j}  \right)  -  \dot{\bm r}_i \cdot \frac{\partial \dot {\bm r}_i}{\partial q_j} \right\} \, \delta q_j \tag{*} }}\\
+&=  \sum_{i=1}^N \sum_{j=1}^S m_i \left\{ \frac{d}{d t} \left( \dot{\bm r}_i  \cdot
+\frac{\partial \dot{\bm r}_i}{\partial \dot q_j}  \right)  -  \dot{\bm r}_i \cdot \frac{\partial \dot {\bm r}_i}{\partial q_j} \right\} \, \delta q_j \tag{*} \\
 
-&=  {{c1::\sum_{i=1}^N \sum_{j=1}^S m_i \left\{ \frac{d}{d t} \left[ \frac{\partial}{\partial \dot q_j}  \left( \frac{1}{2}\dot{\bm r}_i^2 \right) \right]  -  \frac{\partial}{\partial \dot q_j} \left( \frac{1}{2}\dot{\bm r}_i^2 \right) \right\} \, \delta q_j}} \\
+&=  \sum_{i=1}^N \sum_{j=1}^S m_i \left\{ \frac{d}{d t} \left[ \frac{\partial}{\partial \dot q_j}  \left( \frac{1}{2}\dot{\bm r}_i^2 \right) \right]  -  \frac{\partial}{\partial \dot q_j} \left( \frac{1}{2}\dot{\bm r}_i^2 \right) \right\} \, \delta q_j \\
 
 &=  \sum_{j=1}^S  \left\{ \frac{d}{d t} \left( \frac{\partial T}{\partial \dot q_j} \right)  -  \frac{\partial T}{\partial \dot q_j} \right\} \, \delta q_j \\
 
@@ -210,11 +210,11 @@ _{\neq f(\dot q)}
     
 \frac{d}{d t} \frac{\partial \boldsymbol r_i}{\partial q_j} &= 
 
-{{c1::\sum_{l=1}^S \frac{\partial^2 \boldsymbol r_i}{\partial q_l \, \partial q_j} \dot q_l + \frac{\partial ^2 \boldsymbol r_i}{\partial t \, \partial q_j}}} \\
+\sum_{l=1}^S \frac{\partial^2 \boldsymbol r_i}{\partial q_l \, \partial q_j} \dot q_l + \frac{\partial ^2 \boldsymbol r_i}{\partial t \, \partial q_j} \\
     
-&= {{c1::\frac{ \partial}{ \partial q_j}  \left\{  \sum_{l=1}^S \frac{\partial \boldsymbol r_i}{\partial q_l} \dot q_l + \frac{\partial \boldsymbol r_i}{\partial t} \right\}}}
+&= \frac{ \partial}{ \partial q_j}  \left\{  \sum_{l=1}^S \frac{\partial \boldsymbol r_i}{\partial q_l} \dot q_l + \frac{\partial \boldsymbol r_i}{\partial t} \right\}
 
-= {{c1::\frac{\partial }{\partial q_j} \left\{ \dot{\boldsymbol r_i}  \right\} }}
+= \frac{\partial }{\partial q_j} \left\{ \dot{\boldsymbol r_i}  \right\} 
 
 = \frac{\partial \dot{\boldsymbol r}_i}{\partial q_j}
 
@@ -477,7 +477,7 @@ _{\neq f(\dot q)}
 ![](https://remnote-user-data.s3.amazonaws.com/jtMWLqwnyzu77Qd586uogvSxTkbwUKKd0zjVWnS93Oroy6yKNaFV0tu8MAoqGmc4TIBIQfZ8JcDiWTpmcDFyHhdB2eLIEac-RmZ5czQ9NE2gT6ysRgvC-jQT-vRvgZKB.png)
                 - Wir deﬁnieren: 
 
-                  $$S \{q(t)\} = {{c1::\int_{t_1}^{t_2} \widetilde L (t) \ \mathrm dt}}$$
+                  $$S \{q(t)\} = \int_{t_1}^{t_2} \widetilde L (t) \ \mathrm dt$$
 
                   [Wir deﬁnieren: S {q(t)} = t2 ∫ t1̃ L(t) dt .](Physik/Analytische%20Mechanik/Grundkurs%20Theoretische%20Physik%202%20-%20Analytische%20Mechanik/Highlights/Page%20080/Wir%20de%EF%AC%81nieren_%20S%20%7Bq(t)%7D%20%3D%20t2%20%E2%88%AB%20t1%CC%83%20L(t)%20dt%20.md)
                 - [Deﬁnition 1.3.1](Physik/Analytische%20Mechanik/Grundkurs%20Theoretische%20Physik%202%20-%20Analytische%20Mechanik/Highlights/Page%20080/De%EF%AC%81nition%201.3.1.md)
@@ -924,12 +924,12 @@ z &= r\cot\alpha
                       
                         - Mit $y' = \mathrm dy/\mathrm dx$
 
-                          $$V=\alpha\left( \int\limits_0^l {{c1::\sqrt{1+y'^2}\,\mathrm dx }}- l\right)$$
+                          $$V=\alpha\left( \int\limits_0^l \sqrt{1+y'^2}\,\mathrm dx - l\right)$$
 
                           
                 - Für kleine Auslenkungen gilt 
 
-                  $$\sqrt{1+y'^2} \approx {{c1::1+\frac12y'^2}}$$
+                  $$\sqrt{1+y'^2} \approx 1+\frac12y'^2$$
 
                   
                     - 
